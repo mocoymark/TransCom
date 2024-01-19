@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bus.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="buses.css">
+    <title>Booking Seats System</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>MoTravel.com</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <div class="user">
+        <img src="./image/Profile.jpg" alt="" class="user-image" />
+        <div>
+          <p class="bold">Mark M.</p>
+          <p>Admin</p>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="buses.html">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span class="nav-item">Buses</span>
+          </a>
+          <span class="tooltip">Buses</span>
+        </li>
+        <li>
+          <a href="routes.html">
+            <i class="fa-solid fa-map"></i>
+            <span class="nav-item">Routes</span>
+          </a>
+          <span class="tooltip">Routes</span>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="nav-item">Customers</span>
+          </a>
+          <span class="tooltip">Customers</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-chair"></i>
+            <span class="nav-item">Seats</span>
+          </a>
+          <span class="tooltip">Seats</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-book"></i>
+            <span class="nav-item">Booking</span>
+          </a>
+          <span class="tooltip">Booking</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="nav-item">Reports</span>
+          </a>
+          <span class="tooltip">Reports</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Routes</h1>
+        <p>Views of all operations</p>
+      </div>
+         
+      <div class="route-content">
+        <h1 class="routes-logo">Motravel.com</h1>
+        <div class="location">
+         <div class="location-1" id="loc">
+          <h3>Cebu Trip</h3>
+          <p>Mandaue</p>
+          <p>Alcoy</p>
+          <p>Balamban</p>
+          <p>Bogo City</p>
+          <p>Carmen</p>
+          <p>Cebu City</p>
+          <p>Compostela</p>
+          <p>Consolacion</p>
+          <p>Cordova</p>
+        </div>
+        <div class="location-2" id="loc">
+          <h3>Manila Trip</h3>
+          <p>Quezon City</p>
+          <p>Makati City</p>
+          <p>Taguig City</p>
+          <p>Caloocan</p>
+          <p>Mandaluyong</p>
+          <p>Parañaque</p>
+          <p>Las Piñas</p>
+          <p>Muntinlupa</p>
+          <p>Valenzuela</p>
+        </div>
+        <div class="location-3" id="loc">
+          <h3>Davao Trip</h3>
+          <p>Davao City</p>
+          <p>Tagum City</p>
+          <p>Digos City</p>
+          <p>Matina</p>
+          <p>Buhangin</p>
+          <p>Calinan</p>
+          <p>Panacan</p>
+          <p>Toril</p>
+          <p>Agdao</p>
+          <p>Sasa</p>
+
+        </div>
+        <div class="location-4" id="loc">
+          <h3>Cagayan De Oro Trip</h3>
+          <p>Cagayan De Oro City</p>
+          <p>Xavier Estates</p>
+          <p>Lapasan</p>
+          <p>Macasandig</p>
+          <p>Carmen</p>
+          <p>Bugo</p>
+          <p>Kauswagan</p>
+          <p>Pueblo de Oro</p>
+          <p>Camaman-an</p>
+        </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+      sidebar.classList.toggle('active')
+    }
+  </script>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="buses.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Booking Seats System</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+         <span>MoTravel.com</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <div class="user">
+        <img src="./image/Profile.jpg" alt="" class="user-image" />
+        <div>
+          <p class="bold">Mark M.</p>
+          <p>Admin</p>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="buses.html">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span class="nav-item">Buses</span>
+          </a>
+          <span class="tooltip">Buses</span>
+        </li>
+        <li>
+          <a href="routes.html">
+            <i class="fa-solid fa-map"></i>
+            <span class="nav-item">Routes</span>
+          </a>
+          <span class="tooltip">Routes</span>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="nav-item">Customers</span>
+          </a>
+          <span class="tooltip">Customers</span>
+        </li>
+        <li>
+          <a href="seat.html">
+            <i class="bx bx-chair"></i>
+            <span class="nav-item">Seats</span>
+          </a>
+          <span class="tooltip">Seats</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-book"></i>
+            <span class="nav-item">Booking</span>
+          </a>
+          <span class="tooltip">Booking</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="nav-item">Reports</span>
+          </a>
+          <span class="tooltip">Reports</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Transportation</h1>
+        <p>Views of all operations</p>
+      </div>
+       <div class="vehicle">
+
+        <div class="bus">
+
+          <div class="popup" id="popup-1">
+            <div class="content">
+               <div class="close-btn" onclick="closePopup()">&times</div>
+            <h2>Book Transportation</h2>
+            <div class="book-content">
+              <div class="book-col-1">
+                <img src="./image/bu.jpg" id="book-logo" alt="">
+                <h3 class="header">Hello Our Dear Customers</h3>
+                <p> our top priority. We maintain a robust fleet through regular maintenance, and our drivers undergo rigorous safety training. We strictly adhere to industry standards, employing advanced technologies like GPS tracking for real-time monitoring. Our services include safety features and emergency response plans, with insurance coverage for added protection. Our goal is to instill confidence in clients, assuring them that their transportation needs are in capable and trustworthy hands.</p>
+              </div>
+              <div class="info">
+                <label for="">First Name:</label>
+                <input type="text" class="name" id="book-firstname">
+                <label for="">Last Name:</label>
+                <input type="text" class="name" id="book-lastname">
+                <label for="">Email:</label>
+                <input type="text" class="name" id="book-email">
+                <label for="">Location:</label>
+                <input type="text" class="name" id="book-location">
+                <label for="">Date:</label>
+                <input type="text" class="name" id="book-date">
+                <label for="">Time:</label>
+                <input type="text" class="name" id="book-time">
+                <label for="">Passenger:</label>
+                <input type="number" class="name" id="book-passenger">
+
+                <input id="btn-submit" type="submit" value="Submit">
+                
+              </div>
+            </div>
+              
+          </div>
+            </div>
+         <img src="./image/bu.jpg" alt="">
+         <button onclick="openPopup()" id="btn-buses"><h3><i class="fa-solid fa-bus"></i> Bus</h3></button>
+        </div>
+
+        <div class="motor">
+         <img src="./image/motor.jpg" alt="">
+
+         <button id="btn-buses"><h3><i class="fa-solid fa-bus"></i> Bus</h3></button>
+        </div>
+
+        <div class="auto">
+         <img src="./image/auto.jpg" alt="">
+
+         <button id="btn-buses"><h3><i class="fa-solid fa-bus"></i> Bus</h3></button>
+        </div>
+
+        <div class="truck">
+         <img src="./image/truck.jpg" alt="">
+         <button id="btn-bike"><h3><i class="fa-solid fa-truck"></i> Bus</h3></button>
+        </div>
+        
+         <div class="bike">
+         <img src="./image/bike.jpg" alt="">
+         
+         <button id="btn-bike"><h3><i class="fa-solid fa-truck"></i> Bike</h3></button>
+        </div>
+
+         <div class="truck">
+         <img src="./image/yatch.jpg" alt="">
+         
+         <button id="btn-yatch"><h3><i class="fa-solid fa-truck"></i> Yatch</h3></button>
+        </div>
+
+         <div class="truck">
+         <img src="./image/airplane.jpg" alt="">
+         
+         <button id="btn-airplane"><h3><i class="fa-solid fa-truck"></i> Airplane</h3></button>
+        </div>
+
+         <div class="truck">
+         <img src="./image/scooter.jpg" alt="">
+         <button id="btn-scooter"><h3><i class="fa-solid fa-truck"></i> Scooter</h3></button>
+        </div>
+       </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+      sidebar.classList.toggle('active')
+    }
+//     function togglePopup() {
+//     document.getElementById('popup-1').classList.toggle("active");
+// } 
+    function openPopup() {
+  var popup = document.querySelector('.popup');
+  popup.classList.add('active');
+}
+
+function closePopup() {
+  var popup = document.querySelector('.popup');
+  popup.classList.remove('active');
+}
+
+
+  </script>
+</html>

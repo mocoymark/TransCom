@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="buses.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Booking Seats System</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>Booking System</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <div class="user">
+        <img src="./image/Profile.jpg" alt="" class="user-image" />
+        <div>
+          <p class="bold">Mark M.</p>
+          <p>Admin</p>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="buses.html">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span class="nav-item">Buses</span>
+          </a>
+          <span class="tooltip">Buses</span>
+        </li>
+        <li>
+          <a href="routes.html">
+            <i class="fa-solid fa-map"></i>
+            <span class="nav-item">Routes</span>
+          </a>
+          <span class="tooltip">Routes</span>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="nav-item">Customers</span>
+          </a>
+          <span class="tooltip">Customers</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-chair"></i>
+            <span class="nav-item">Seats</span>
+          </a>
+          <span class="tooltip">Seats</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-book"></i>
+            <span class="nav-item">Booking</span>
+          </a>
+          <span class="tooltip">Booking</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="nav-item">Reports</span>
+          </a>
+          <span class="tooltip">Reports</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Customers</h1>
+        <p>Views of all operations</p>
+      </div>
+      <div class="customers">
+        <div class="search">
+          <button onclick="goBack()" class="back"><i class="fa-solid fa-backward"></i>Go Back</button>
+          <div class="search-col">
+           <label for="">Search:</label>
+          <input type="text" id="search" name="search">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          
+          </div>
+         
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email Address</th>
+              <th>Phone Number</th>
+              <th>Date Booked</th>
+              <th>Assistant</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+            <tr>
+              <td>Mark C. Mocoy</td>
+              <td>Markmocoycataraja@gmail.com</td>
+              <td>09516314816</td>
+              <td>27/01/2022 10:30 AM</td>
+              <td>John Doe</td>
+              <td>Cebu City</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+      sidebar.classList.toggle('active')
+    }
+        function goBack() {
+            window.history.back();
+        }
+  </script>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Booking Seats System</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>MoTravel.com</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <div class="user">
+        <img src="./image/Profile.jpg" alt="" class="user-image" />
+        <div>
+          <p class="bold">Mark M.</p>
+          <p>Admin</p>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="buses.html">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span class="nav-item">Buses</span>
+          </a>
+          <span class="tooltip">Buses</span>
+        </li>
+        <li>
+          <a href="routes.html">
+            <i class="fa-solid fa-map"></i>
+            <span class="nav-item">Routes</span>
+          </a>
+          <span class="tooltip">Routes</span>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="nav-item">Customers</span>
+          </a>
+          <span class="tooltip">Customers</span>
+        </li>
+        <li>
+          <a href="seat.html">
+            <i class="bx bx-chair"></i>
+            <span class="nav-item">Seats</span>
+          </a>
+          <span class="tooltip">Seats</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-book"></i>
+            <span class="nav-item">Booking</span>
+          </a>
+          <span class="tooltip">Booking</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="nav-item">Reports</span>
+          </a>
+          <span class="tooltip">Reports</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Dashboard</h1>
+        <p>Views of all operations</p>
+      </div>
+
+      <!-- Content -->
+      <div class="categories">
+        <div class="category" id="buses">
+          <h3>Transpo</h3>
+          <p>Total Buses:</p>
+          <div class="chart">100</div>
+          <a href="buses.html"
+            >View more <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="category" id="routes">
+          <h3>Routes</h3>
+          <p>Total Routes:</p>
+          <div class="chart">100</div>
+          <a href="routes.html"
+            >View more <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="category" id="customers">
+          <h3>Customers</h3>
+          <p>Total Customers:</p>
+          <div class="chart">100</div>
+          <a href="customer.html"
+            >View more <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="category" id="seats">
+          <h3>Seats</h3>
+          <p>Total Seats:</p>
+          <div class="chart">100</div>
+          <a href="seat.html"
+            >View more <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="category" id="booking">
+          <h3>Booking</h3>
+          <p>Total Book:</p>
+          <div class="chart">100</div>
+          <a href="">View more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="category" id="reports">
+          <h3>Reports</h3>
+          <p>Views all Reports</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+      sidebar.classList.toggle('active')
+    }
+  </script>
+</html>
